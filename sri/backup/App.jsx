@@ -7,7 +7,7 @@ let App = () => {
   <div className='ml-auto' id="navbarNav">
     <ul class="navbar-nav">
       <li className="nav-list">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Home </a>
       </li>
       <li className="nav-list">
         <a class="nav-link" href="#">product</a>
