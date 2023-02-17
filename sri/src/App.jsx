@@ -1,24 +1,24 @@
-import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom'
-import Navbar from './Navbar/Navbar'
-// import User from './Axios/User/User'
-import Message from './Hooks/Message'
-import Counter from './Hooks/Counter'
-class App extends Component {
-    render() {
-        return (
-            <div>
-                <Router>
-                    <Navbar />
-                    <Switch>
-                        <Route path='/useState' component={Message} />
-                        <Route path='/counter' component={Counter} /> 
+import React from 'react'
+import Navbars from './Navbars'
+ import User from './Users/User'
+ import Home from './Users/Home'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+//  import EtApp from './ET/EtApp'
+
+function App() {
+    return (
+        <div>
+            <Router>    
+                <Navbars />
+                <Switch>
+                    <Route path='/user' component={User} />
+                    <Route path='/home' component={Home} />
+                    {/* <Route path='/etapp' component={EtApp}/>   */}
                     
-                    </Switch>
-                </Router>
-            </div>
-        )
-    }
+                </Switch>
+            </Router>
+        </div>
+    )
 }
 
 export default App
